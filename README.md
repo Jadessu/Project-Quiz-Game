@@ -1,12 +1,12 @@
 # So You Think You Can Code
-## A vanilla JS browser Game
+## A vanilla JS browser Quiz Game
 
-*logo will be included here*
 
+![](Images/logoBackground.png)
 
 *website will be included here*
 
-SYTYCC is an online education all that quizzes the user on their programming knowledge. The topics featured in the game are as follow:
+SYTYCC is an online education app that quizzes the user on their programming knowledge. The topics featured in the game are as follow:
 
 - HTML
 - CSS
