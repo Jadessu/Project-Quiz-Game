@@ -6,7 +6,7 @@
 
 *website will be included here*
 
-SYTYCC is an online education app that quizzes the user on their programming knowledge. The topics featured in the game are as follow:
+SYTYCC is an online education game that quizzes the user on their programming knowledge. The topics featured in the game are as follow:
 
 - HTML
 - CSS

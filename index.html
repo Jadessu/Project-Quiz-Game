@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll website</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo"> <img src="lgoWhite.png" width = "40%" alt="" srcset=""></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#quiz" class="navbar__links" id="quiz-page">Quiz</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#study" class="navbar__links" id="study-page">Study</a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+          <h1 class="hero__heading">So you think you can <span>&ltCODE&gt</span></h1>
+          <p class="hero__description">Let's find out!</p>
+          <!-- <button class="main__btn"><a href="#">Explore</a></button> -->
+        </div>
+      </div>
+      <!-- Quiz Section -->
+      <div class="main" id="quiz">
+          <div class="main__container">
+              <div class="main__img--container">
+                  <div class="main__img--card"> 
+                     <div class="html"></div>
+                     <div class="css"></div>
+                     <div class="flexbox-grid"></div>
+                     <div class="javascript"></div>
+                  </div>
+              </div>
+              <div class="main__content">
+                  <h1>Choose a topic for your Quiz</h1>
+                  <h2 class = "topicName">topic name will appear here</h2>
+                  <p class = "topicDescription">topic description will appear here</p>
+                  <button class = "main__btn"><a href="#">I am not ready</a></button>
+              </div>
+          </div>
+      </div>
+  <!-- Study section -->
+  <div class="study" id="study">
+      <h1>Choose A Topic To Study</h1>
+      <div class="study__wrapper">
+          <div class="study__card">
+            <img src="https://img.icons8.com/color/240/000000/html-5--v1.png"/>
+              <h2>HTML</h2>
+              <p>a little description</p>
+              <div class="study__btn"><button>Get Started</button></div>
+      </div>
+      <div class="study__card">
+        <img src="https://img.icons8.com/color/240/000000/css3.png"/>
+        <h2>CSS</h2>
+        <p>a little description</p>
+        <div class="study__btn"><button>Get Started</button></div>
+</div>
+<div class="study__card">
+    <img src="https://img.icons8.com/color/96/000000/hashtag-activity-grid-2.png"/>
+    <h2>FLEXBOX / GRID</h2>
+    <p>a little description</p>
+    <div class="study__btn"><button>Get Started</button></div>
+</div>
+<div class="study__card">
+    <img src="https://img.icons8.com/color/240/000000/javascript.png"/>
+    <h2>JAVASCRIPT</h2>
+    <p>a little description</p>
+    <div class="study__btn"><button>Get Started</button></div>
+</div>
+  </div>
+</body>
+</html>
