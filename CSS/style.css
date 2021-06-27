@@ -158,7 +158,7 @@ padding: 0 50px;
 /* Hero section */
 .hero{
     /* background: #000000; */
-    background-image: url("background1.jpg");
+    background-image: url("../images/background1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -355,7 +355,7 @@ background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, F
  .html{
     background-image:
     linear-gradient(to bottom, rgba(255, 0, 0, 0.12), rgba(117, 19, 93, 0.33)),
-    url('htmlbar.jpg');
+    url('../images/htmlbar.jpg');
      text-align: center;
      cursor: pointer;
  }
@@ -363,21 +363,21 @@ background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, F
  .css{
     background-image:
     linear-gradient(to bottom, rgba(0, 0, 255, 0.12), rgba(117, 19, 93, 0.33)),
-    url('csstab.jpg');
+    url('../images/csstab.jpg');
     cursor: pointer;
  }
 
  .flexbox-grid{
     background-image:
     linear-gradient(to bottom, rgba(9, 26, 124, 0.12), rgba(117, 19, 93, 0.33)),
-    url('flexboxgridtab.jpg');
+    url('../images/flexboxgridtab.jpg');
     cursor: pointer;
  }
 
  .javascript{
     background-image:
     linear-gradient(to bottom, rgba(253, 249, 0, 0.12), rgba(117, 19, 93, 0.53)),
-    url('javscripttab.jpg');
+    url('../images/javscripttab.jpg');
     cursor: pointer;
  }
 
