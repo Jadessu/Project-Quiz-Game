@@ -116,3 +116,81 @@ html{
         display: flex;
     }
 }
+
+.container{
+    width: 100%;
+    max-width: 80rem;
+    margin: 50px auto;
+    padding: 0 1.5rem;
+}
+
+.accordion-item{
+    background-color: var(--accordion-item);
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+.accordion-link{
+    font-size: 1.6rem;
+    color: var(--accordion-link);
+    text-decoration: none;
+    background-color: var(--accordion-item);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.accordion-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+}
+
+.accordion-link .add{
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--answer-color);
+    transition: max-height 650ms;
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: var(--answer-sidebar);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    
+
+}
+
+.answer p{
+    font-size: 1.4rem;
+    color: var(--answer-text);
+    padding: 2rem;
+}
+
+.accordion-item:target .answer{
+    max-height: 20rem;
+
+}
+
+/* .accordion-item:target .accordion-link .add{
+    display: none;
+} 
+
+ accordion-item:target .accordion-link .remove{
+    display: block;
+}  */
+
