@@ -188,3 +188,21 @@ function allowNext(){
 
     }
 }
+
+//Check if the answer is wrong or right
+function checkAnswer(element){
+    if(element.id == questions[currentIndex].answer){
+        element.className="correct"
+        review.innerHTML = "You know your stuff!"
+        // document.body.style.backgroundColor = "green"
+        // updateAnswersTracker("correct")
+        score++
+    }
+    else {
+        element.className="wrong"
+        review.innerHTML = "You will get it next time!"
+        // document.body.style.backgroundImage = "url('wrongwallpaper.jpg')"
+        // updateAnswersTracker("wrong")
+    }
+    stopNext();
+}
