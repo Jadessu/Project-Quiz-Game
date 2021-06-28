@@ -170,3 +170,13 @@ function randomQuestionGenerator(){
     }
 }
 
+//Function to make user select option before moving on
+function stopNext(){
+    for(let i=0; i<options.length; i++){
+        options[i].classList.add("disabled")
+
+        if(options[i].id == questions[currentIndex].answer){
+            options[i].classList.add('correct');
+        }
+    }
+}
