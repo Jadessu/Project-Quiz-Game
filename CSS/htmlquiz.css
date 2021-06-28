@@ -239,7 +239,10 @@
 }
 
 .quizOver .box{
-    background-color: #009688;
+    background: #FC354C;  
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  
+    background: linear-gradient(to right, #0ABFBC, #FC354C); 
+
     padding:30px;
     border-radius: 10px;
     text-align: center;
@@ -257,7 +260,7 @@
 .quizOver .box button{
     padding: 15px 50px;
     border:none;
-    background-color: #f7b53c;
+    background-color: #940b1b;
     border-radius: 5px;
     font-size: 16px;
     margin:15px 0 20px;

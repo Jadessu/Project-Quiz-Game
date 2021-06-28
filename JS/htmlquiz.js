@@ -93,6 +93,7 @@ const percentage =document.querySelector(".percentage")
 
 const nextButton = document.querySelector(".btn")
 const tryAgainButton = document.querySelector("#tryAgainButton")
+const overReview = document.querySelector("#overReview")
 
 
 const firstAnswer = document.querySelector(".option1")
@@ -228,3 +229,22 @@ function next(){
 window.onload=function(){
     this.randomQuestionGenerator();
 }
+
+//Displays the quiz-over page if quiz is over
+function quizOver(){
+    document.querySelector(".quizOver").classList.add("show")
+    correctAnswers.innerHTML = score;
+    totalQuestions2.innerHTML = questions.length
+    percentage.innerHTML=Math.round((score/questions.length)*100) + "%"
+    
+}
+
+function tryAgain(){
+    window.location.reload();
+}
+
+// if (Math.round((score/questions.length)*100) < 50){
+//     overReview.innerText = "Really? under 50 is terrible"
+// } else {
+//     overReview.innerText = "at least you got above a 50"
+// }
