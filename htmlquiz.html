@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section>
+    <nav class="navbar">
+        <div class = "brand-title">Maybe Logo</div>
+        <a href = "#" class = "toggle-button">
+            <span class = "bar"></span>
+            <span class = "bar"></span>
+            <span class = "bar"></span>
+        </a>
+        <div class = "navbar-links">
+            <ul>
+                <li><a href = "#">Home</a></li>
+                <li><a href = "#">HTML</a></li>
+                <li><a href = "#">CSS</a></li>
+                <li><a href = "#">Flexbox/ Grid</a></li>
+                <li><a href = "#">Javascript</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+
+    <div class="quizBox">
+        <div class="questionNum">
+            <h3>Question <span class="questionOutOf"></span> of 
+                <span class="totalQuestions"></span>
+            </h3>
+        </div>
+        <div class="question">
+            How do you declare a Javascript variable?
+        </div>
+        <div class="answers">
+            <div id="0" class="option1" onclick="check(this)"></div>
+            <div id="1" class="option2" onclick="check(this)"></div>
+            <div id="2" class="option3" onclick="check(this)"></div>
+            <div id="3" class="option4" onclick="check(this)"></div>
+        </div>
+        <div class="button btn">
+            <button type="button" class="btn">Next</button>
+        </div>
+        <div class="review">
+    
+        </div>
+    </div>
+    <div class="quizOver">
+        <div class="box">
+            <h1>Good Job! <br />
+                You got <span class="correctAnswers"></span> out of 
+                <span class="totalQuestions2"></span> answers correct. 
+                That is <span class="percentage"></span>
+                Try Again
+            </h1>
+            <button type="button" id = "tryAgainButton" >Try Again!</button>
+        </div>
+    </div>
+    </section>
+    
+</body>
+</html>
