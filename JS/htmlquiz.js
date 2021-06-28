@@ -77,6 +77,11 @@ let score = 0;
 
 
 /*------------------------ Cached Element References ------------------------*/
+// navbar toggle
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+
 const review = document.querySelector(".review")
 const options = document.querySelector(".answers").children
 const questionOn = document.querySelector(".questionOutOf")
@@ -95,6 +100,8 @@ const secondAnswer = document.querySelector(".option2")
 const thirdAnswer = document.querySelector(".option3")
 const fourthAnswer = document.querySelector(".option4")
 
+totalQuestions.innerText = questions.length //how many questions we have
+
 
 
 
@@ -107,7 +114,15 @@ const fourthAnswer = document.querySelector(".option4")
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+nextButton.addEventListener('click', next)
+tryAgainButton.addEventListener('click', tryAgain)
+// opt1.addEventListener('click', check)
+// opt2.addEventListener('click', check)
+// opt3.addEventListener('click', check)
+// opt4.addEventListener('click', check)
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+  })
 
 
 
@@ -119,9 +134,6 @@ const fourthAnswer = document.querySelector(".option4")
 
 
 /*-------------------------------- Functions --------------------------------*/
-
-
-
 
 
 
