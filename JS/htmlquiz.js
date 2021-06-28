@@ -267,3 +267,10 @@ function startTimer() {
 	// Start a new timer interval
     timerIntervalId = setInterval(tick, 1000)
 }
+
+function tick() {
+	// Increment seconds by 1
+    seconds++
+	// Call render function
+    render()
+}
