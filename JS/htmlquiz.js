@@ -134,6 +134,15 @@ toggleButton.addEventListener('click', () => {
 
 
 /*-------------------------------- Functions --------------------------------*/
-
+//pulls a question from the index on load
+function pullQuestions(){
+    questionOn.innerHTML = index + 1
+    question.innerHTML = questions[currentIndex].q;
+    firstAnswer.innerHTML = questions[currentIndex].options[0]    
+    secondAnswer.innerHTML = questions[currentIndex].options[1]
+    thirdAnswer.innerHTML = questions[currentIndex].options[2]
+    fourthAnswer.innerHTML = questions[currentIndex].options[3]
+    index++
+}
 
 
