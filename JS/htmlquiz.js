@@ -1,4 +1,56 @@
 /*-------------------------------- Constants --------------------------------*/
+const questions = [
+    {
+        q:'HTML stands for : ',
+        options:['HighText Machine Language', 'HyperText and links Markup Language', 'HyperText Markup Language', 'None of these'],
+        answer:2
+    },
+    {
+        q:'The correct sequence of HTML tags for starting a webpage is: ',
+        options:['Head - Title - HTML - body', 'HTML - Body - Title - Head', 'HTML - Head - Body - Title', 'HTML - Head - Title - Body'],
+        answer:3
+    },
+    {
+        q:'Which of the following element is responsible for making the text bold in HTML?',
+        options:['&ltpre&gt', '&lta&gt', '&ltb&gt', '&ltbr&gt'],
+        answer:2
+    },
+    {
+        q:'Which of the following tag is used for inserting the largest heading in HTML?',
+        options:['&lth3&gt', '&lth1&gt', '&lth5&gt', '&lth6&gt'],
+        answer:1
+    },
+    {
+        q:'Which of the following tag is used to insert a line-break in HTML',
+        options:['&ltbr&gt', '&lta&gt', '&ltpre&gt', '&ltb&gt'],
+        answer:0
+    },
+    {
+        q:'How do you create an unordered list (a list with the list items in bullets) in HTML?',
+        options:['&ltul&gt', '&ltol&gt', '&ltli&gt', '&lti&gt'],
+        answer:0
+    },
+    {
+        q:'Which of the following tag is used to make the underlined text?',
+        options:['&lti&gt', '&ltul&gt', '&ltu&gt', '&ltpre&gt'],
+        answer:2
+    },
+    {
+        q:'Which of the following tag is used to add rows in the table?',
+        options:['&lttd&gt and &lt/td&gt', '&ltth&gt and &lt/th&gt', '&lttr&gt and &lt/tr&gt', 'None of the above'],
+        answer:2
+    },
+    {
+        q:'The &lthr&gt tag in HTML is used for :',
+        options:['new line', 'vertical ruler', 'new paragraph', 'horizontal ruler'],
+        answer:3
+    },
+    {
+        q:'Which of the following attribute is used to provide a unique name to an element??',
+        options:['class', 'id', 'type', 'None of the above'],
+        answer:1
+    }
+]
 
 
 
