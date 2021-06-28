@@ -195,14 +195,14 @@ function checkAnswer(element){
         element.className="correct"
         review.innerHTML = "You know your stuff!"
         // document.body.style.backgroundColor = "green"
-        // updateAnswersTracker("correct")
+        
         score++
     }
     else {
         element.className="wrong"
         review.innerHTML = "You will get it next time!"
         // document.body.style.backgroundImage = "url('wrongwallpaper.jpg')"
-        // updateAnswersTracker("wrong")
+        
     }
     stopNext();
 }
@@ -222,4 +222,9 @@ function forceUserToSelect(){
 function next(){
     forceUserToSelect();
     review.innerHTML = ""
+}
+
+//Function to restart the quiz
+window.onload=function(){
+    this.randomQuestionGenerator();
 }
