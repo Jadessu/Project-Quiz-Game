@@ -206,3 +206,14 @@ function checkAnswer(element){
     }
     stopNext();
 }
+
+//Forces user to select an answer before clicking on the Next button
+function forceUserToSelect(){
+    if(!options[0].classList.contains("disabled")){
+        alert("Please select an option")
+    }
+    else{
+        randomQuestionGenerator();
+        allowNext();
+    }
+}
