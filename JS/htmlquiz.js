@@ -217,3 +217,9 @@ function forceUserToSelect(){
         allowNext();
     }
 }
+
+//function to listen to click event on Next button
+function next(){
+    forceUserToSelect();
+    review.innerHTML = ""
+}
