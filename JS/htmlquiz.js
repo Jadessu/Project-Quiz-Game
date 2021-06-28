@@ -101,6 +101,10 @@ const secondAnswer = document.querySelector(".option2")
 const thirdAnswer = document.querySelector(".option3")
 const fourthAnswer = document.querySelector(".option4")
 
+//timer
+const timerEl = document.getElementById('timer');
+const timeTook = document.querySelector("#timeTook")
+
 totalQuestions.innerText = questions.length //how many questions we have
 
 
