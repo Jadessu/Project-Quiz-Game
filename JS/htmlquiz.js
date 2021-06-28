@@ -70,7 +70,9 @@ let answeredQuestions =[]; // This will be the array of anwered question indexes
 let score = 0;
 
 
-
+//timer
+let timerIntervalId;
+let min, sec, seconds = 0
 
 
 
