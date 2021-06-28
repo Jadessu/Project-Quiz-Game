@@ -145,4 +145,28 @@ function pullQuestions(){
     index++
 }
 
+//Function to select a random question from our index of questions
+function randomQuestionGenerator(){
+    let randomNumber = Math.floor(Math.random()*questions.length);
+    if(index == questions.length){
+        quizOver();
+    }
+    else{
+        if(answeredQuestions.length > 0){
+            if(answeredQuestions.includes(randomNumber)){
+                randomQuestionGenerator();
+            }
+            else {
+                currentIndex = randomNumber;
+                pullQuestions();
+            }
+        }
+        if(answeredQuestions.length == 0){
+            currentIndex = randomNumber
+            pullQuestions()
+        }
+        //add the question to list of anwered questions
+        answeredQuestions.push(randomNumber)
+    }
+}
 
