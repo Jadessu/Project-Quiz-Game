@@ -180,3 +180,11 @@ function stopNext(){
         }
     }
 }
+
+//Function to activate next button
+function allowNext(){
+    for(let i=0; i<options.length; i++){
+        options[i].classList.remove("disabled", "correct", "wrong")
+
+    }
+}
