@@ -286,3 +286,10 @@ function render() {
         timerEl.innerText = `${min}:${sec}`
     }
 }
+
+function winTime(){
+    winTime = seconds;
+	if (min < 1) { timeTook.innerText = `It took you ${sec} seconds to complete the quiz` }
+	else if (min < 2) {timeTook.innerText = `It took you ${min} minute and ${sec} seconds to complete the quiz`}
+	else {timeTook.innerText = `It took you ${min} minutes and ${sec} seconds to complete the quiz`}
+}
