@@ -274,3 +274,15 @@ function tick() {
 	// Call render function
     render()
 }
+
+function render() {
+	// Calculate min/sec
+    min = Math.floor(seconds/60)
+    sec = seconds % 60
+	// Display current min/sec in the timerEl element
+    if (sec < 10){
+        timerEl.innerText = `${min}:0${sec}`
+    } else {
+        timerEl.innerText = `${min}:${sec}`
+    }
+}
