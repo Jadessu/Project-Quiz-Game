@@ -10,9 +10,12 @@
 
 
 
-/*-------------------------------- Constants --------------------------------*/
+/*-------------------------------- Variables --------------------------------*/
 
-
+let currentIndex;
+let index = 0;
+let answeredQuestions =[]; // This will be the array of anwered question indexes(target later)
+let score = 0;
 
 
 
