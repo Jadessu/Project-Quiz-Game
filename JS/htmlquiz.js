@@ -254,3 +254,16 @@ function tryAgain(){
 // } else {
 //     overReview.innerText = "at least you got above a 50"
 // }
+
+//TIMER
+function startTimer() {
+	// Check for an active timer interval
+    // If interval exists, clear it and reset seconds to zero
+    if (timerIntervalId){
+        seconds = 0 
+        clearInterval(timerIntervalId)
+    }
+	
+	// Start a new timer interval
+    timerIntervalId = setInterval(tick, 1000)
+}
