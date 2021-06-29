@@ -115,6 +115,8 @@ const wholeGame = document.querySelector(".hide")
 //Theme Changer
 const checkbox = document.querySelector(".checkbox")
 
+
+
 totalQuestions.innerText = questions.length //how many questions we have
 
 
@@ -144,6 +146,8 @@ toggleButton.addEventListener('click', () => {
 
 checkbox.addEventListener('change', changeTheme)
 
+//Clear interval on page switched.
+navbarLinks.addEventListener('click', clearIt)
 
 
 
@@ -323,3 +327,8 @@ function changeTheme(){
     timerEl.classList.toggle('dark')
     console.log("switched")
 }
+
+function clearIt() {
+    clearInterval(timerIntervalId)
+    /** Do whatever else you need to **/
+  }

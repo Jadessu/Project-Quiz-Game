@@ -7,6 +7,8 @@ const quizCss = document.querySelector(".css")
 const quizFlexboxGrid = document.querySelector(".flexbox-grid")
 const quizJavascript = document.querySelector(".javascript")
 
+
+
 //text changes
 
 const topicName = document.querySelector(".topicName")
@@ -81,19 +83,23 @@ quizFlexboxGrid.addEventListener('mouseout', removeText)
 quizJavascript.addEventListener('mouseover', javascriptText)
 quizJavascript.addEventListener('mouseout', removeText)
 
-quizCss.addEventListener("click", console.log(" Css has been clicked"))
+// quizCss.addEventListener("click", console.log(" Css has been clicked"))
 
 function htmlText(){
     topicName.innerText = "Hypertext Markup Language"
+    topicDescription.innerText = "The quiz contains 10 questions and there is no time limit. A minimum score of 70% is required to win the game! Click to start!"
 }
 function cssText(){
     topicName.innerText = "Cascading Style Sheets"
+    topicDescription.innerText = "The quiz contains 10 questions and there is no time limit. A minimum score of 70% is required to win the game! Click to start!"
 }
 function flexboxGridText(){
     topicName.innerText = "FLEXBOX vs GRID"
+    topicDescription.innerText = "The quiz contains 10 questions and there is no time limit. A minimum score of 70% is required to win the game! Click to start!"
 }
 function javascriptText(){
     topicName.innerText = "JAVASCRIPT"
+    topicDescription.innerText = "The quiz contains 10 questions and there is no time limit. A minimum score of 70% is required to win the game! Click to start!"
 }
 
 function removeText(){
@@ -101,3 +107,4 @@ function removeText(){
     topicDescription.innerText = ""
 
 }
+
