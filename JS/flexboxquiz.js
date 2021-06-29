@@ -119,6 +119,7 @@ const checkbox = document.querySelector(".checkbox")
 
 const winLoseReview = document.querySelector("#timeTook")
 const yourTime = document.querySelector("#yourTime")
+const quizOverBox = document.querySelector(".box")
 
 
 
@@ -331,6 +332,7 @@ function winTime(){
 function changeTheme(){
     document.body.classList.toggle('dark')
     timerEl.classList.toggle('dark')
+    quizOverBox.classList.toggle('dark')
     
 }
 

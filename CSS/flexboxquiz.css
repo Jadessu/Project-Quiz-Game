@@ -49,9 +49,9 @@
 }
 
 .box.dark{
-    background: var(--quizOver-dark2);  
-    background: -webkit-linear-gradient(to right, var(--quizOver-dark1), var(--quizOver-dark2));  
-    background: linear-gradient(to right, var(--quizOver-dark1), var(--quizOver-dark2)); 
+    background: var(--main-backgroundDark);  
+    background: -webkit-linear-gradient(to right, var(--main-backgroundDark), var(--main-backgroundDark2));  
+    background: linear-gradient(to right, var(--main-backgroundDark), var(--main-backgroundDark2)); 
 }
 
 .navbar.dark{
@@ -385,9 +385,9 @@ box-shadow: inset 22px 22px 69px #999999,
 }
 
 .box{
-    background: var(--quizOver2);  
-    background: -webkit-linear-gradient(to right, var(--quizOver1), var(--quizOver2));  
-    background: linear-gradient(to right, var(--quizOver1), var(--quizOver2)); 
+    background: var(--main-background);  
+    background: -webkit-linear-gradient(to right, var(--main-background), var(--main-background2));  
+    background: linear-gradient(to right, var(--main-background), var(--main-background2)); 
 
     padding:30px;
     border-radius: 10px;
