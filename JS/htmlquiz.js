@@ -122,6 +122,8 @@ const winLoseReview = document.querySelector("#timeTook")
 
 const yourTime = document.querySelector("#yourTime")
 
+const questionBox = document.querySelector(".box")
+
 totalQuestions.innerText = questions.length //how many questions we have
 
 
@@ -337,6 +339,7 @@ function winTime(){
 function changeTheme(){
     document.body.classList.toggle('dark')
     timerEl.classList.toggle('dark')
+    questionBox.classList.toggle('dark')
 }
 
 function clearIt() {

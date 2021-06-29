@@ -3,11 +3,16 @@
     --main-background2: #f16529;
     --quiz-box: #FFF4EC;
     --button-color: #680000;
+    --quizOver1: #0abfbc;
+    --quizOver2: #fc354c;
     /* Dark Mode */   
     --main-backgroundDark: #19001b;
     --main-backgroundDark2: #3a0101;
     --button-colorDark: #3d0000;
     --timer-dark: white;
+
+    --quizOver-dark1: #002928;
+    --quizOver-dark2: #290005;
 }
 
 
@@ -39,6 +44,12 @@
 
 #timer.dark{
     color: var(--timer-dark)
+}
+
+.box.dark{
+    background: var(--quizOver-dark2);  
+    background: -webkit-linear-gradient(to right, var(--quizOver-dark1), var(--quizOver-dark2));  
+    background: linear-gradient(to right, var(--quizOver-dark1), var(--quizOver-dark2)); 
 }
 
 
@@ -362,10 +373,10 @@ box-shadow: inset 22px 22px 69px #999999,
     display:flex;
 }
 
-.quizOver .box{
-    background: #FC354C;  
-    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  
-    background: linear-gradient(to right, #0ABFBC, #FC354C); 
+.box{
+    background: var(--quizOver2);  
+    background: -webkit-linear-gradient(to right, var(--quizOver1), var(--quizOver2));  
+    background: linear-gradient(to right, var(--quizOver1), var(--quizOver2)); 
 
     padding:30px;
     border-radius: 10px;
