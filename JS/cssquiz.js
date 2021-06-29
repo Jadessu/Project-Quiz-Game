@@ -116,9 +116,13 @@ const wholeGame = document.querySelector(".hide")
 
 //Theme Changer
 const checkbox = document.querySelector(".checkbox")
+const navbar = document.querySelector(".navbar")
+const nextButton2 = document.querySelector("#nextButton")
 
 const winLoseReview = document.querySelector("#timeTook")
 const yourTime = document.querySelector("#yourTime")
+
+const questionBox = document.querySelector(".box")
 
 totalQuestions.innerText = questions.length //how many questions we have
 
@@ -330,6 +334,9 @@ function winTime(){
 function changeTheme(){
     document.body.classList.toggle('dark')
     timerEl.classList.toggle('dark')
+    navbar.classList.toggle('dark')
+    nextButton2.classList.toggle('dark')
+    questionBox.classList.toggle('dark')
 }
 
 function clearIt() {
