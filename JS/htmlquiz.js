@@ -107,6 +107,14 @@ const fourthAnswer = document.querySelector(".option4")
 const timerEl = document.getElementById('timer');
 const timeTook = document.querySelector("#timeTook")
 
+//start button
+const startButton = document.querySelector("#start-btn")
+const startSection = document.querySelector(".start")
+const wholeGame = document.querySelector(".hide")
+
+//Theme Changer
+const checkbox = document.querySelector(".checkbox")
+
 totalQuestions.innerText = questions.length //how many questions we have
 
 
@@ -131,7 +139,10 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
   })
 
+// startButton.addEventListener('click', hidePage)
+// startButton.addEventListener('click', unhidePage)
 
+checkbox.addEventListener('change', changeTheme)
 
 
 
@@ -234,6 +245,7 @@ function next(){
 //Function to restart the quiz
 window.onload=function(){
     this.randomQuestionGenerator();
+    startTimer()
 }
 
 //Displays the quiz-over page if quiz is over
@@ -242,11 +254,14 @@ function quizOver(){
     correctAnswers.innerHTML = score;
     totalQuestions2.innerHTML = questions.length
     percentage.innerHTML=Math.round((score/questions.length)*100) + "%"
+    winTime()
+    clearInterval(timerIntervalId)
     
 }
 
 function tryAgain(){
     window.location.reload();
+    startTimer()
 }
 
 // if (Math.round((score/questions.length)*100) < 50){
@@ -292,4 +307,19 @@ function winTime(){
 	if (min < 1) { timeTook.innerText = `It took you ${sec} seconds to complete the quiz` }
 	else if (min < 2) {timeTook.innerText = `It took you ${min} minute and ${sec} seconds to complete the quiz`}
 	else {timeTook.innerText = `It took you ${min} minutes and ${sec} seconds to complete the quiz`}
+}
+
+// function hidePage(){
+//     startSection.classList.add("hide")
+// }
+
+// function unhidePage(){
+//     wholeGame.classList.remove("hide")
+// }
+
+
+function changeTheme(){
+    document.body.classList.toggle('dark')
+    timerEl.classList.toggle('dark')
+    console.log("switched")
 }
