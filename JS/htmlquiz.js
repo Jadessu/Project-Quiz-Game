@@ -73,6 +73,7 @@ let score = 0;
 //timer
 let timerIntervalId;
 let min, sec, seconds = 0
+let endScore = Math.round((score/questions.length)*100)
 
 
 
@@ -116,6 +117,8 @@ const wholeGame = document.querySelector(".hide")
 const checkbox = document.querySelector(".checkbox")
 
 const navbar = document.querySelector(".navbar-links").children
+
+const winLoseReview = document.querySelector("#timeTook")
 
 totalQuestions.innerText = questions.length //how many questions we have
 
@@ -262,6 +265,7 @@ function quizOver(){
     percentage.innerHTML=Math.round((score/questions.length)*100) + "%"
     winTime()
     clearInterval(timerIntervalId)
+    winLose()
     
 }
 
@@ -270,11 +274,15 @@ function tryAgain(){
     startTimer()
 }
 
-// if (Math.round((score/questions.length)*100) < 50){
-//     overReview.innerText = "Really? under 50 is terrible"
-// } else {
-//     overReview.innerText = "at least you got above a 50"
-// }
+function winLose(){
+    if(endScore <= 70){
+        winLoseReview.innerText = "You failed. A minimum score of 70% is required to win the game."
+    } else if (endScore >= 100){
+        winLoseReview.innerText = "A perfect score! You really are an expert."
+    }  else {
+        winLoseReview.innerText = "You Won!"
+    }
+}
 
 //TIMER
 function startTimer() {
@@ -327,7 +335,6 @@ function winTime(){
 function changeTheme(){
     document.body.classList.toggle('dark')
     timerEl.classList.toggle('dark')
-    console.log("switched")
 }
 
 function clearIt() {
