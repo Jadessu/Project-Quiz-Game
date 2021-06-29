@@ -338,9 +338,9 @@ function clearIt() {
   }
 
   function winLose(){
-    if(endScore <= 70){
-        winLoseReview.innerText = "You failed. A minimum score of 70% is required to win the game."
-    } else if (endScore >= 100){
+    if(score <= 7){
+        winLoseReview.innerText = "You failed. A minimum score of 70% is required to win the game." 
+    } else if (score >= 10){
         winLoseReview.innerText = "A perfect score! You really are an expert."
     }  else {
         winLoseReview.innerText = "You Won!"
