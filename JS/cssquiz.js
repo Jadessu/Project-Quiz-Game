@@ -118,6 +118,7 @@ const wholeGame = document.querySelector(".hide")
 const checkbox = document.querySelector(".checkbox")
 
 const winLoseReview = document.querySelector("#timeTook")
+const yourTime = document.querySelector("#yourTime")
 
 totalQuestions.innerText = questions.length //how many questions we have
 
@@ -312,9 +313,9 @@ function render() {
 
 function winTime(){
     winTime = seconds;
-	if (min < 1) { timeTook.innerText = `It took you ${sec} seconds to complete the quiz` }
-	else if (min < 2) {timeTook.innerText = `It took you ${min} minute and ${sec} seconds to complete the quiz`}
-	else {timeTook.innerText = `It took you ${min} minutes and ${sec} seconds to complete the quiz`}
+	if (min < 1) { yourTime.innerText = `It took you ${sec} seconds to complete the quiz` }
+	else if (min < 2) {yourTime.innerText = `It took you ${min} minute and ${sec} seconds to complete the quiz`}
+	else {yourTime.innerText = `It took you ${min} minutes and ${sec} seconds to complete the quiz`}
 }
 
 // function hidePage(){
@@ -338,9 +339,9 @@ function clearIt() {
 
   function winLose(){
     if(endScore <= 70){
-        winLoseReview.innerText = "You failed. A minimum score of 70% is required to win the game."
+        winLoseReview.innerHTML = "You failed. A minimum score of 70% is required to win the game."
     } else if (endScore >= 100){
-        winLoseReview.innerText = "A perfect score! You really are an expert."
+        winLoseReview.innerHTML = "A perfect score! You really are an expert."
     }  else {
         winLoseReview.innerText = "You Won!"
     }
