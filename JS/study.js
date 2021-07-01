@@ -2,8 +2,11 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 const colorInput = document.querySelector("#change-it")
 const colorText = document.querySelector("#userColor")
-const song = new Audio("../Sounds/study.mp3")
-const askMusic = document.querySelector("#music")
+const icon = document.getElementById("icon")
+const mySong = new Audio("../Sounds/studyMix.mp3")
+const prevButton = document.querySelector("#previous")
+const nextButton = document.querySelector("#next")
+
 
 
 toggleButton.addEventListener('click', () => {
@@ -12,6 +15,10 @@ toggleButton.addEventListener('click', () => {
 
 //Event Listeners
 colorInput.addEventListener("click", addColor)
+icon.addEventListener("click", play)
+prevButton.addEventListener("click", prevSong)
+nextButton.addEventListener("click", nextSong)
+
 
 
 
@@ -28,12 +35,30 @@ function addColor(){
   }
 }
 
+let isPlaying = false
+function play(){
+  if(isPlaying === false){
+      isPlaying = true
+      mySong.play()
+      mySong.loop = true
+      mySong.volume = .1
+      icon.src = "../images/pause.png"
+  } else{
+      isPlaying = false
+      mySong.pause()
+      mySong.volume = .1
+      icon.src = "play.png"
+  }
+ 
+}
 
-function playMusic(){
-  song.play()
-  song.volume = .2
+function prevSong(){
+  mySong.currentTime -= 120.00
+}
 
+function nextSong(){
+  mySong.currentTime += 120.00
 }
 
 
-document.onload = playMusic()
+
