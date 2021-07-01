@@ -47,7 +47,7 @@ function play(){
       isPlaying = false
       mySong.pause()
       mySong.volume = .1
-      icon.src = "play.png"
+      icon.src = "../images/play.png"
   }
  
 }
