@@ -99,7 +99,13 @@ At the bottom of the page, there is a text that reads:
 
  # WIREFRAME
 
- 
+![](Images/wireframe.jpg)
+![](Images/homewf.jpg)
+![](Images/quizsectionwf.jpg)
+![](Images/studysectionwf.jpg)
+![](Images/studywf.jpg)
+![](Images/quizwf.jpg)
+
  
  
  
