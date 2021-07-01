@@ -136,6 +136,16 @@ color: linear-gradient(to right, #1fddff, #ff4b1f); /* W3C, IE 10+/ Edge, Firefo
     .navbar-links.active{
         display: flex;
     }
+    #icon{
+        display: none;
+    }
+    
+    .back-forward{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
 }
 
 .container{
@@ -233,6 +243,10 @@ color: linear-gradient(to right, #1fddff, #ff4b1f); /* W3C, IE 10+/ Edge, Firefo
 
 #icon{
     width: 10%;
+}
+
+.back-forward{
+    width: 5%;
 }
 /* .accordion-item:target .accordion-link .add{
     display: none;
