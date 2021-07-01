@@ -16,7 +16,7 @@ colorInput.addEventListener("click", addColor)
 //function
 function addColor(){
   let userColor = prompt("what color do you want the background to be?")
-  document.body.style.backgroundColor = " "+ userColor +" "  
+  document.body.style.backgroundColor = userColor
   if (userColor === "yellow" || userColor === "white"){
     colorText.style.color = "black"
   
@@ -25,9 +25,3 @@ function addColor(){
   }
 }
 
-// function contrast(){
-// if (userColor === "yellow"){
-//   colorText.style.color = "black"
-
-// }
-// }
