@@ -219,6 +219,21 @@ color: linear-gradient(to right, #1fddff, #ff4b1f); /* W3C, IE 10+/ Edge, Firefo
 #userColor.dark{
     color: black;
 }
+
+#music{
+    color: white;
+    cursor: pointer;
+}
+
+#music-player{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#icon{
+    width: 10%;
+}
 /* .accordion-item:target .accordion-link .add{
     display: none;
 } 

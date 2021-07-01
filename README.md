@@ -2,9 +2,9 @@
 ## A vanilla JS browser Quiz Game
 
 
-![](Images/logoBackground.png)
+![](Images/logowf.jpg)
 
-*website will be included here*
+[SYTYCC WEBSITE](https://sytycc.netlify.app/)
 
 SYTYCC is an online education game that quizzes the user on their programming knowledge. The topics featured in the game are as follow:
 
@@ -56,7 +56,7 @@ On hover, the user will receive the quiz direction on the left side of the scree
                             Quiz Name
     This quiz contains 10 questions and there is no time limit. A minimum socre of 70% is required to win the game. Click to start!
 
-_The user will also be presented with a button that reads "**I am not read**" Upon clicking this button, the user will be redirected to the study session, which will open on a new page._
+_The user will also be presented with a button that reads "**I am not ready**" Upon clicking this button, the user will be redirected to the study session, which will open on a new page._
 
 ### If the user select a topic to be quizzed on, the user will be directed to the quiz section of that category.
 

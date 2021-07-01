@@ -73,7 +73,7 @@ padding: 0 50px;
 
 /* changes color of nav links on hover */
 .navbar__links:hover{
-    color: #9518fc;
+    color: blueviolet;
     transition: all 0.3s ease
 }
 
@@ -185,9 +185,14 @@ padding: 0 50px;
   color: #fff;
 }
 .hero__heading span{
-    background: #E44D26;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F16529, #E44D26);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    background: #70e1f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+box-shadow:  5px 5px 5px #7a6f81,
+             -5px -5px 5px #ffffff;
+
 
     background-size: 100%;
     -webkit-background-clip: text;
@@ -195,6 +200,8 @@ background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, F
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+
+
 
 .hero__description {
     font-size: 60px;
@@ -208,7 +215,7 @@ background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, F
   }
   
   .highlight{
-      border-bottom: 4px solid rgb(132, 0, 255);
+      border-bottom: 4px solid rgb(21, 128, 190);
   }
 
   @media screen and (max-width: 768px) {
@@ -220,6 +227,12 @@ background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, F
       }
   }
     
+  #scrollIcon{
+      margin-top: 150px;
+      width: 2rem;
+      color: white;
+      
+  }
 
   /* Quiz Section */
   .main{

@@ -124,6 +124,9 @@ const yourTime = document.querySelector("#yourTime")
 
 const questionBox = document.querySelector(".box")
 
+const boo = new Audio("../Sounds/boo.wav")
+const clap = new Audio("../Sounds/clapping.mp3")
+
 totalQuestions.innerText = questions.length //how many questions we have
 
 
@@ -347,9 +350,15 @@ function clearIt() {
   function winLose(){
     if(score <= 7){
         winLoseReview.innerText = "You failed. A minimum score of 70% is required to win the game." 
+        boo.play()
+        boo.volume = .2
     } else if (score >= 10){
-        winLoseReview.innerText = "A perfect score! You really are an expert."
+        winLoseReview.innerText = "A perfect score! You are a CSS expert."
+        clap.play()
+        clap.volume = .2
     }  else {
         winLoseReview.innerText = "You Won!"
+        clap.play()
+        clap.volume = .2
     }
 }
