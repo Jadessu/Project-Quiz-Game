@@ -216,7 +216,9 @@ color: linear-gradient(to right, #1fddff, #ff4b1f); /* W3C, IE 10+/ Edge, Firefo
      cursor: pointer
  }
  
-
+#userColor.dark{
+    color: black;
+}
 /* .accordion-item:target .accordion-link .add{
     display: none;
 } 
