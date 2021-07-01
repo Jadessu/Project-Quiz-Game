@@ -1,3 +1,5 @@
+
+//CACHE REFERENCES
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 const colorInput = document.querySelector("#change-it")
@@ -8,12 +10,12 @@ const prevButton = document.querySelector("#previous")
 const nextButton = document.querySelector("#next")
 
 
+//Event Listeners
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
-//Event Listeners
 colorInput.addEventListener("click", addColor)
 icon.addEventListener("click", play)
 prevButton.addEventListener("click", prevSong)

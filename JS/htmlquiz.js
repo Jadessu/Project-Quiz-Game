@@ -153,8 +153,7 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
   })
 
-// startButton.addEventListener('click', hidePage)
-// startButton.addEventListener('click', unhidePage)
+
 
 checkbox.addEventListener('change', changeTheme)
 
@@ -230,16 +229,12 @@ function allowNext(){
 function checkAnswer(element){
     if(element.id == questions[currentIndex].answer){
         element.className="correct"
-        review.innerHTML = "You know your stuff!"
-        // document.body.style.backgroundColor = "green"
-        
+        review.innerHTML = "You know your stuff!"  
         score++
     }
     else {
         element.className="wrong"
-        review.innerHTML = "You will get it next time!"
-        // document.body.style.backgroundImage = "url('wrongwallpaper.jpg')"
-        
+        review.innerHTML = "You will get it next time!"      
     }
     stopNext();
 }
@@ -340,13 +335,6 @@ function winTime(){
 	else {yourTime.innerText = `It took you ${min} minutes and ${sec} seconds to complete the quiz`}
 }
 
-// function hidePage(){
-//     startSection.classList.add("hide")
-// }
-
-// function unhidePage(){
-//     wholeGame.classList.remove("hide")
-// }
 
 
 function changeTheme(){

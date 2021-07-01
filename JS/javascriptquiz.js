@@ -119,6 +119,8 @@ const checkbox = document.querySelector(".checkbox")
 const winLoseReview = document.querySelector("#timeTook")
 const yourTime = document.querySelector("#yourTime")
 
+//Audio
+
 const boo = new Audio("../Sounds/boo.wav")
 const clap = new Audio("../Sounds/clapping.mp3")
 
@@ -139,17 +141,9 @@ totalQuestions.innerText = questions.length //how many questions we have
 
 nextButton.addEventListener('click', next)
 tryAgainButton.addEventListener('click', tryAgain)
-// opt1.addEventListener('click', check)
-// opt2.addEventListener('click', check)
-// opt3.addEventListener('click', check)
-// opt4.addEventListener('click', check)
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
   })
-
-// startButton.addEventListener('click', hidePage)
-// startButton.addEventListener('click', unhidePage)
-
 checkbox.addEventListener('change', changeTheme)
 
 //Clear interval on page switched.
@@ -223,15 +217,11 @@ function checkAnswer(element){
     if(element.id == questions[currentIndex].answer){
         element.className="correct"
         review.innerHTML = "You know your stuff!"
-        // document.body.style.backgroundColor = "green"
-        
         score++
     }
     else {
         element.className="wrong"
-        review.innerHTML = "You will get it next time!"
-        // document.body.style.backgroundImage = "url('wrongwallpaper.jpg')"
-        
+        review.innerHTML = "You will get it next time!"   
     }
     stopNext();
 }
@@ -276,11 +266,6 @@ function tryAgain(){
     startTimer()
 }
 
-// if (Math.round((score/questions.length)*100) < 50){
-//     overReview.innerText = "Really? under 50 is terrible"
-// } else {
-//     overReview.innerText = "at least you got above a 50"
-// }
 
 //TIMER
 function startTimer() {
@@ -321,13 +306,6 @@ function winTime(){
 	else {yourTime.innerText = `It took you ${min} minutes and ${sec} seconds to complete the quiz`}
 }
 
-// function hidePage(){
-//     startSection.classList.add("hide")
-// }
-
-// function unhidePage(){
-//     wholeGame.classList.remove("hide")
-// }
 
 
 function changeTheme(){
