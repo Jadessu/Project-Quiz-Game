@@ -23,7 +23,7 @@ SYTYCC is an online education game that quizzes the user on their programming kn
 
 ## Tech
 
-SYTYCC uses the following languages and libraries in the developmental process:
+### Languages
 
 - [HTML] -The standard markup language for documents designed to be displayed in a web browser. 
 - [CSS] - A style sheet language used for presentation of a wesbite.
@@ -32,9 +32,15 @@ SYTYCC uses the following languages and libraries in the developmental process:
 - [FLEXBOX] -  A layout model that allows elements to align and distribute space within a container. 
 - [GRID] - Enables an author to align elements into columns and rows.
 
-SYTYCC uses the following websites in the developmental process:
+### Websites
 - [ICONS8](https://icons8.com/) - Download design elements for free: icons, photos, vector illustrations, and music for your videos.
 - [uiGradients](https://uigradients.com/#Venice) - A handpicked collection of beautiful color gradients for designers and developers​.
+- [neumorphism.io](https://neumorphism.io/#e0e0e0) - CSS code generator that will help with colors, gradients, and shadows.
+
+### Audio
+- [Bensounds](https://www.bensound.com/) - Download royalty free music for free and use it in your project.
+- [freesound](https://freesound.org/) - A collaborative database of creative commons licensed sounds for free.
+
 <br> <br>
 <br>
 
@@ -100,11 +106,11 @@ At the bottom of the page, there is a text that reads:
  # WIREFRAME
 
 ![](Images/wireframe.jpg)
-![](Images/homewf.jpg)
+<!-- ![](Images/homewf.jpg)
 ![](Images/quizsectionwf.jpg)
 ![](Images/studysectionwf.jpg)
 ![](Images/studywf.jpg)
-![](Images/quizwf.jpg)
+![](Images/quizwf.jpg) -->
 
  
  
