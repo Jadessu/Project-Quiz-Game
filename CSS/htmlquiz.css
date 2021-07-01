@@ -345,6 +345,14 @@ box-shadow: inset 22px 22px 69px #999999,
     margin:10px 0;
 }
 
+#userColor{
+   text-align: center;
+}
+
+#change-it{
+    cursor: pointer
+}
+
 .review{
     background-color: var(--button-colorDark);
     color: white;

@@ -207,6 +207,16 @@ color: linear-gradient(to right, #1fddff, #ff4b1f); /* W3C, IE 10+/ Edge, Firefo
 
 }
 
+#userColor{
+    text-align: center;
+    color: white;
+ }
+ 
+ #change-it{
+     cursor: pointer
+ }
+ 
+
 /* .accordion-item:target .accordion-link .add{
     display: none;
 } 
