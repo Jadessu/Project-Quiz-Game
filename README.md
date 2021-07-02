@@ -112,6 +112,21 @@ At the bottom of the page, there is a text that reads:
 ![](Images/studywf.jpg)
 ![](Images/quizwf.jpg) -->
 
+# SPECIAL THANKS
+- First and foremost, to all my instrcutors and peers from GA SEIR-EC-6-7. My peers design ideas from our prior tic tac toe project were great inspirations to use on this project.
+
+- [BreanD](https://twitter.com/bwdds?lang=en) - Reached out to him to inccorporate a similar design he used for a website and he was more than happy to help. He even offered to help me include REACT.
+
+- The Engineering Channel - All of my problems that couldn't be resolved with stackoverflow were easily resolved throught the engineering channel.
+
+- [Netflix](www.netflix.com) - Although it is a common design pattern, I practiced designing the Netflix layout a long time ago and I was able to use that same pattern in my design. (Home section main content centered and items aligned to left and right on pages after the home section.)
+
+- [Julio Codes](www.patreon.com/juliocodes) - I wanted to incoorporate the nextlfix Q & A section in my app as a study page. His tutorial on how to implemenet Javascript in there was very helpful.
+
+- [ljc-dev](https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0) - For my mobile responsivess, I wanted to incoorporate a hamburger menu that I see on every site. He had a guide on how to do that on the dev website. 
+
+- [Stackoflow](www.stackoverflow.com) - Links for each function from stack overflow that was tweaked will be included in the comments at the end of the JS file.
+
 ## APP SCREENSHOTS
 ![](Images/screenshot1.png)
 ![](Images/screenshot2.png)
