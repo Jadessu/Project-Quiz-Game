@@ -139,6 +139,18 @@ At the bottom of the page, there is a text that reads:
 ![](Images/screenshot12.png) ![](Images/screnshot11.png) 
 ![](Images/screenshot10.png) ![](Images/screenshot9.png)
 
+## FUTURE UPDATES
+### Most of these will require backend.
+
+- [ ] A note taking section for user to take notes in and refer to later. 
+- [ ] Make your own quiz(enter your own questons and answers) and be tested on it!
+- [ ] Add more questions with an API, especially common interview questions.
+- [ ] Include a difficulty mode. User will only be allowed 10 seconds per question.
+- [ ] Add a section that requires user to actually write out code in the quiz. Example(FizzBuzz)
+- [ ] Add a music only section with a playlist of music to help users code.
+- [ ] Add reference sites to learn how to code or do specific things you see on the website.
+
+
 
 
 
