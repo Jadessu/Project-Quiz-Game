@@ -121,7 +121,8 @@ At the bottom of the page, there is a text that reads:
 ![](Images/screenshot6.png)
 ![](Images/screenshot7.png)
 ![](Images/screenshot8.png)
-![](Images/screenshot9.png) ![](Images/screenshot10.png)
+![](Images/screenshot12.png) ![](Images/screnshot11.png) 
+![](Images/screenshot10.png) ![](Images/screenshot9.png)
 
 
 
